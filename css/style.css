@@ -1,4 +1,4 @@
-/****************************************** google fonts links start ***************************************************/
+ /****************************************** google fonts links start ***************************************************/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 /******************************************************************************************************************/
 /************************************************ global css*****************************************************/
@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     outline: none!important;
+    /* overflow-x: hidden; */
 }
 img{
     max-width: 100%;
@@ -59,6 +60,7 @@ ul{
     font-weight: 500;
     animation: pulse_01 2s ease infinite;
 }
+
 @keyframes pulse_01{
      0%{
         transform: scale(0.94);
@@ -90,6 +92,7 @@ body{
 }
 .section-padding{
     padding: 80px 0;
+     
 }
 .section-title{
     margin-bottom: 60px;
@@ -151,18 +154,37 @@ body{
 /******************************************* navbar end *****************************************************/
 /******************************************* home start *****************************************************/
 .home{
-    min-height: 100vh;
-    padding: 150px 0;
-    background-color: var(--bg-dark);
-    border-radius: 0 0 100px 100px;
+    /* min-height: 100vh; */
+    height: 600px;
+    /* min-height: 90vh; */
+    /* padding: 150px 0; */
+    /* background-color: var(--bg-dark); */
+    /* border-radius: 0 0 100px 100px; by Ashu Tamar */
     box-shadow: var(--shadow-black-300);
     overflow-x:hidden;
+    /* code injected by Ashu Tamar Technical Manager start here  5/3/22 */
+    /* background-image: url(/img/Web-Development.jpg); */
+    /* background-image: none; */
+    /* background-position:  right; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* padding-left: 500px; */
+    /* margin-bottom: -400px; */
+    /* padding-bottom: -1000px; */
+    /* code injected by Ashu Tamar Technical Manager start end 5/3/22 */
+    margin-bottom: -2rem;
+    /* background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url('https://images.pexels.com/photos/7792863/pexels-photo-7792863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+     
+
 }
+ 
 .home-text h1{
-    margin: 0 0 20px; 
+    /* code injected by Ashu Tamar Technical Manager start end 9/3/22 */
+    margin: -20px 0 20px; 
     color: #ffffff;
     font-size: 45px;
     font-weight: 700;
+    /* code injected by Ashu Tamar Technical Manager  end 9/3/22 */
 }
 .home-text p{
     color: #ffffff;
@@ -175,8 +197,11 @@ body{
     margin-top: 40px;
 }
 .home-img img {
-    max-width: 250px;
-    width: 100%;
+    /* code injected by Ashu Tamar Technical Manager start start 9/3/22 */
+    /* max-width: 250px; */
+    width: 500px;
+    /* border: 1px solid red; */
+    /* code injected by Ashu Tamar Technical Manager  end 9/3/22 */
 }
 @keyframes bounceTop_01{
     0%,100%{
@@ -188,9 +213,13 @@ body{
 }
 .home-img{
     position: relative;
-    animation: bounceTop_01 3s ease infinite;
+    /* code & changes by Ashu Tamar Techniccal Manager  */
+    /* animation: bounceTop_01 3s ease infinite; */
+    /* border: 1px solid blueviolet; */
+    /* width: 500px; */
+    
 }
-.home-img .circle{
+/* .home-img .circle{
     position:absolute;
     z-index: 1;
     height: 400px;
@@ -200,7 +229,8 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
+} */
+/* code & changes by Ashu Tamar Techniccal Manager  */
 .home-img .circle::before{
     content: '';
     position: absolute;
@@ -232,7 +262,19 @@ body{
     position: relative;
     z-index: 1;
     overflow:hidden;
+    /* background-image: url(/img/Web-Development.jpg);
+    background-position: center; */
 }
+/* .section-padding {
+    padding: 40px 0;
+    
+} */
+.services{
+    margin-top: -7rem;
+    margin-bottom: 0rem;
+    padding-bottom: 2rem;
+}
+ 
 .services-carousel .services-item::before,
 .services-carousel .services-item::after{
     content: '';
@@ -322,6 +364,7 @@ body{
     color: #ffffff;
     font-weight: 500;
     text-transform: capitalize;
+    /* margin-bottom: -30px; */
     
 }
 .services-item p{
@@ -341,7 +384,7 @@ body{
     text-decoration: none!important;   
 }
 .graphic-design  {
-    text-decoration: none!important;     
+    text-decoration: none!important;    
 }
 .owl-carousel .owl-dots{
     padding: 0 15px;
@@ -363,6 +406,12 @@ body{
 }
 /******************************************* services section end ***************************************/
 /******************************************* about us section start ***************************************/
+/* Button for about us section start here 3/3/22 by Ashu Tamar Technical Manager */
+.btn-about-us{
+    margin-left: 688px;
+    margin-top: 1rem;
+}
+/* Button for about us section end here 3/3/22 by Ashu Tamar Technical Manager */
 .about-us-img img{
    max-width: 250px;
    width: 100%;
@@ -378,6 +427,7 @@ body{
     font-size: 16px;
     line-height: 26px;
     color: #ffffff;
+    /* color: var(--black-900); */
     margin:0 0 15px;
     font-weight: 300;
     text-align: justify;
@@ -393,6 +443,10 @@ body{
 .center-h span{
     color: var(--main-color);
 }
+/* .about-us{ */
+    /* background-image: linear-gradient(to bottom, rgba(255,255,0,0.5), rgba(0,0,255,0.5)), url('https://images.pexels.com/photos/7888728/pexels-photo-7888728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    height: 1000px; */
+/* } */
 /******************************************* about us section end ***************************************/
 /******************************************* why we are different section start ************************/
 .why-we-different{
@@ -505,6 +559,12 @@ body{
 }
 /******************************************* testimonials  section start ********************/
 /******************************************* price  section start ***************************/
+.pricing  {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+
+}
+
 .pricing-plan{
     box-shadow: var(--shadow-black-300);
     border-radius: 10px;
@@ -566,11 +626,23 @@ body{
 }
 /******************************************* pricre section end ***************************/
 /******************************************* team section start***************************/
+/* .team-item img{
+    opacity: 1;
+} */
+.team-item img
+{
+    border-radius: 1rem;
+     
+}
 .team-item{
     margin: 15px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: var(--shadow-black-300);
+}
+.team-item span
+{
+    text-align: center;
 }
 .team-item h3{
     font-size: 18px;
@@ -578,6 +650,7 @@ body{
     font-weight: 500;
     margin: 15px 0 5px;
     text-transform: capitalize;
+    text-align: center;
 }
 .team-item span{
     display: block;
@@ -599,15 +672,21 @@ body{
     position: relative;
     
 }
+section.faq.section-padding{
+    margin-top: -6rem;
+    margin-bottom: -6rem;
+}
 .faq .accordion-header h3{
     font-size: 18px;
     font-weight: 500;
     color: var(--black-400);
     margin: 0;
+    /* margin: 100; */
     transition: all 0.5s ease;
 }
 .faq .accordion-body{
     padding:20px 30px;
+    /* padding:60px 80px; */
     background-color: var(--black-400);
 }
 .faq .accordion-body p{
@@ -763,6 +842,104 @@ div span i::after{
     border-top: 1px solid  var(--black-400);
 }
 /******************************************* footer section end***************************/
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Service section start*********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+.service-plans h3{
+    padding: 2rem 0 0 0;
+    color: var(--black-000);
+}
+.service-plans h4{
+    /* padding: 2rem 0 0 0; */
+    color: var(--black-000);
+}
+.service-plans p{
+    /* padding: 2rem 0 0 0; */
+    color: var(--main-color);
+}
+.service-span{
+    color: var(--main-color);
+}
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Service section end***********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+
+
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ How to pay section start*********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+.how-to-pay{
+    color: var(--black-000);
+    /* background: var(--shadow-black-300); */
+    text-align: center;
+    margin: 3rem 0 0 0;
+    height: 100px;
+}
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ How to pay section end***********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Portfolio section start**********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+.Portfolio-items img{
+    height: 250px;
+    /* cursor: pointer; */
+}
+.Portfolio-items{
+    cursor: pointer;
+}
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Portfolio section end ***********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Portfolio section start**********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+/* .career-header{
+    background-image: url( https://images.pexels.com/photos/7793098/pexels-photo-7793098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+} */
+/*********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************
+************************************ Portfolio section end ***********************************
+**********************************************************************************************
+**********************************************************************************************
+**********************************************************************************************/
+
 /**************************************** Media Queries start  **************************/
 @media(max-width: 991px) {
     .navbar-toggler{
@@ -774,7 +951,7 @@ div span i::after{
     }
     /* .navbar-nav{
         text-align: center;
-    } */
+     */
     .navbar .nav-item{
         margin: 0;
         padding: 5px 15px;
